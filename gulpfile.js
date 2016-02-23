@@ -4,10 +4,10 @@ var gulp            = require('gulp'),
     autoprefixer    = require('gulp-autoprefixer'),
     babel           = require("gulp-babel"),
     browserify      = require('gulp-browserify'),
+    cssnano         = require('gulp-cssnano'),
     imagemin        = require('gulp-imagemin'),
     jade            = require('gulp-jade'),
     jshint          = require('gulp-jshint'),
-    minifyCSS       = require('gulp-minify-css'),
     sass            = require('gulp-sass'),
     stylish         = require('jshint-stylish'),
     uglify          = require('gulp-uglify');
@@ -55,7 +55,7 @@ gulp.task('sass', () => {
       browsers: ['>1%'],
       cascade: false
     }))
-    .pipe(minifyCSS())
+    .pipe(cssnano())
     .pipe(gulp.dest(DIST+'/src/css'));
 });
 
