@@ -1,6 +1,6 @@
 # Gulp static boilerplate
 
-A boilerplate you can make your sites with. 
+A boilerplate you can make your sites with.
 
 ## specifics
 
@@ -9,7 +9,7 @@ A boilerplate you can make your sites with.
     * written in scss
     * minified
     * autoprefixed
-* js 
+* js
     * browserified (you can use `require('something')`)
     * minified
     * checked with jshint
@@ -24,6 +24,8 @@ A boilerplate you can make your sites with.
 
 ```
 *.jade
+includes/
+  *.jade
 src/
     js/
         *.js
