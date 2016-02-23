@@ -1,0 +1,29 @@
+/*
+ * generic styling and variables
+ *
+ * @author Haroen Viaene <hello@haroen.me>
+ */
+
+$font-family-general: system, -apple-system, Roboto, sans-serif;
+
+$size-radius-small: 0.3em;
+$size-radius: 0.5em;
+$size-radius-large: 1em;
+$size-radius-circle: 50%;
+
+$color-light: white;
+$color-dark: black;
+$color-accent: #A03CF8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: $font-family-general;
+  box-sizing: border-box;
+  background-color: $color-light;
+  color: $color-dark;
+}
