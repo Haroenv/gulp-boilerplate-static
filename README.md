@@ -4,7 +4,7 @@ A boilerplate you can make your sites with.
 
 ## specifics
 
-* html written in jade
+* html written in pug (jade)
 * css
     * written in scss
     * minified
@@ -19,13 +19,14 @@ A boilerplate you can make your sites with.
     * lossless optimisations
 * gulp for building
 * editorconfig
+* BrowserSync ([localhost:3000](http://localhost:3000))
 
 ## folder structure
 
 ```
-*.jade
+*.pug
 includes/
-  *.jade
+  *.pug
 src/
     js/
         *.js
