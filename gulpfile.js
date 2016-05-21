@@ -86,12 +86,10 @@ gulp.task('browser-sync', () => {
 });
 
 gulp.task('watch',['default','browser-sync'], () => {
-  gulp.watch('CNAME',['copy']);
   gulp.watch('**/*.pug', ['templates']);
   gulp.watch(SRC+'/scss/**/*.scss', ['sass']);
   gulp.watch(SRC+'/js/**/*.js', ['scripts']);
   gulp.watch(SRC+'/img/**/*', ['images']);
-  gulp.watch('.well-known/**/*', ['well-known']);
 });
 
 gulp.task('default', ['templates','sass','scripts','images']);
